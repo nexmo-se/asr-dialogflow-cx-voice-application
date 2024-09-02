@@ -16,11 +16,11 @@ The connector code will:
 
 Once this application will be running, you call in to the **`phone number linked`** to your application (as explained below) to interact via voice with your Dialogflow agent.</br>
 
-## Set up the STT/Dialogflow CX connector code - Host server public hostname and port
+## Set up the STT/Dialogflow CX connector server - Host server public hostname and port
 
-First set up a STT/Dialogflow CX connector code from https://github.com/nexmo-se/asr-dialogflow-cx-connector.
+First set up a STT/Dialogflow CX connector server from https://github.com/nexmo-se/asr-dialogflow-cx-connector.
 
-Default local (not public!) connector code `port` is: 6000.
+Connector server's local (not public!) `port` is: 6000.
 
 If you plan to test using `Local deployment` with ngrok (Internet tunneling service) for both the Dialogflow connector code and this sample application, you may set up [multiple ngrok tunnels](https://ngrok.com/docs#multiple-tunnels).
 
@@ -29,7 +29,7 @@ Sign in or sign up with [ngrok](https://ngrok.com/), from the menu, follow the *
 
 Set up a domain to forward to the local port 8000 (as this server application will be listening on port 8000).
 
-Start ngrok to listen on ports 6000 and 8000,</br>
+Start ngrok to start both tunnels that forward to local ports 6000 and 8000,</br>
 please take note of the ngrok **Enpoint URL** that forwards to local port 8000 as it will be needed in the next section,
 that URL looks like:</br>
 `https://yyyyyyyy.ngrok.io`
